@@ -50,8 +50,6 @@ public class selTest {
         driver.findElement(By.xpath("//*[@name='from2toButton']")).click();
         driver.findElement(By.xpath("//*[@value='Volkswagen']")).click();
         driver.findElement(By.xpath("//*[@name='from2toButton']")).click();
-        driver.findElement(By.xpath("//*[@value='GMC']")).click();
-        driver.findElement(By.xpath("//*[@name='from2toButton']")).click();
         driver.findElement(By.xpath("//*[@value='Speichern']")).click();
         // System.out.println("Testform ausgefüllt");
 
@@ -59,7 +57,6 @@ public class selTest {
         Assert.assertTrue(driver.getPageSource().contains("Java Grundlagen Kurs mit Dieter"));
         Assert.assertTrue(driver.getPageSource().contains("Sony"));
         Assert.assertTrue(driver.getPageSource().contains("Volkswagen"));
-        Assert.assertTrue(driver.getPageSource().contains("GMC"));
         //System.out.println("Assertions alles durch");
     }
 
